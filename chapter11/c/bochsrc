@@ -6,8 +6,8 @@
 megs: 32
 
 # filename of ROM images
-romimage: file=/usr/share/bochs/BIOS-bochs-latest
-vgaromimage: file=/usr/share/vgabios/vgabios.bin
+romimage: file=/usr/local/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/usr/local/share/bochs/VGABIOS-lgpl-latest
 
 # what disk images will be used
 floppya: 1_44=a.img, status=inserted
@@ -25,10 +25,10 @@ ata0-master: type=disk, path="100m.img", mode=flat, cylinders=203, heads=16, spt
 boot: a
 
 # where do we send log messages?
-# log: bochsout.txt
+# log: bochsout.log
 
 # disable the mouse
 mouse: enabled=0
 
 # enable key mapping, using US layout as default.
-keyboard_mapping: enabled=1, map=/usr/share/bochs/keymaps/x11-pc-us.map
+keyboard: keymap=/usr/local/share/bochs/keymaps/x11-pc-us.map
